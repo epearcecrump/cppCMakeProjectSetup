@@ -90,10 +90,10 @@ Total Test time (real) =   0.02 sec
 ### Option 2: Run the Test Executable Directly
 
 Alternatively, you can run the test executable directly from the `cppCMakeProjectSetup` directory after building the project. Simply execute:
-
-    ```bash
-    ./test_my_code
-    ```
+    
+```bash
+./test_my_code
+```
 
 The output will be similar to this:
 
