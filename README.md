@@ -75,6 +75,18 @@ To run the tests using the `ctest` command, follow these steps:
 
    Note that the `ctest` command must be run from the `/build/tests` directory to work correctly.
 
+The output will be similar to this:
+
+```
+Test project /<pathtodirectory>/cppCMakeProjectSetup/build/tests
+    Start 1: MyTest
+1/1 Test #1: MyTest ...........................   Passed    0.02 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.02 sec
+```
+
 ### Option 2: Run the Test Executable Directly
 
 Alternatively, you can run the test executable directly from the `cppCMakeProjectSetup` directory after building the project. Simply execute:
@@ -82,6 +94,21 @@ Alternatively, you can run the test executable directly from the `cppCMakeProjec
     ```bash
     ./test_my_code
     ```
+
+The output will be similar to this:
+
+```
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AdditionTest
+[ RUN      ] AdditionTest.HandlesPositiveInput
+[       OK ] AdditionTest.HandlesPositiveInput (0 ms)
+[----------] 1 test from AdditionTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+```
     
 ## Additional Notes
 
